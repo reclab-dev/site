@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Section from "../components/Section";
+import MutableSection from "../components/MutableSection";
 import Bullets from "../components/Bullets";
+import Footer from "../components/Footer";
 
 import { IMG_PATH, ICON_PATH } from "../constants/paths";
 
@@ -38,11 +40,14 @@ export default function Home() {
 
       <Header links={links}></Header>
       <main>
-        <Section bgImage={`${IMG_PATH}img-header.png`}>
+        <MutableSection
+          bgImage={`${IMG_PATH}img-header.png`}
+          dotsPath="headerDots"
+        >
           <h1 className="" style={{ maxWidth: "330px" }}>
             Pesquisa, cultura <span className="font-red">&amp;</span> estratégia
           </h1>
-        </Section>
+        </MutableSection>
 
         <Section bgColor="sand" id="o-que-nos-move">
           <h2 style={{ maxWidth: "90vw" }}>
@@ -90,6 +95,7 @@ export default function Home() {
         <Section
           bgColor="white"
           bgImage={`${ICON_PATH}grafismo.svg`}
+          bgPosition="-400px -400px"
           style={{ backgroundPosition: "center" }}
         >
           <h3
@@ -99,6 +105,16 @@ export default function Home() {
             Com quem já colaboramos
           </h3>
         </Section>
+        <Footer>
+          <iframe
+            width="100%"
+            height="450"
+            frameBorder="0"
+            style={{ border: 0, filter: "grayscale(100%)" }}
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBrQs_MUC_Y4smIa7jtA-hrSgTqqohwsKA&q=reclab"
+            allowFullScreen
+          ></iframe>
+        </Footer>
       </main>
     </div>
   );
