@@ -1,8 +1,8 @@
 const Footer = (props) => {
-  const { children } = props;
+  const { children, id } = props;
 
   return (
-    <footer>
+    <footer id={id}>
       {children}
       <div className="contact-info">
         <div className="contact-info__title">
