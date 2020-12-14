@@ -26,7 +26,7 @@ const Footer = (props) => {
           max-height: fit-content;
           width: 100%;
           padding: 7vh 7vw;
-          background-color: var(--color-black);
+          background-color: var(--color-white);
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
           grid-auto-flow: row;
@@ -43,7 +43,7 @@ const Footer = (props) => {
           height: 250px;
           padding: 1.2em;
           width: 300px;
-          color: var(--color-white);
+          color: var(--color-black);
           letter-spacing: 1px;
         }
 

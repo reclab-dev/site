@@ -22,16 +22,16 @@ const Header = ({ links }) => {
       // sand, black, white, sand, black...
       const percent = getScrollPercent();
 
-      if (percent >= 34 && percent < 53) {
+      if (percent >= 38 && percent < 58) {
         setColor("black");
         setLogo("logo-fundo-branco.svg");
-      } else if (percent >= 51 && percent < 69) {
+      } else if (percent >= 58 && percent < 78) {
         setColor("white");
         setLogo("logo-fundo-vermelho.svg");
-      } else if (percent >= 69 && percent < 87) {
+      } else if (percent >= 70 && percent < 98) {
         setColor("sand");
         setLogo("logo-fundo-preto.svg");
-      } else if (percent > 87) {
+      } else if (percent > 100) {
         setColor("black");
         setLogo("logo-fundo-branco.svg");
       } else {

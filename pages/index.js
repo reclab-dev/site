@@ -92,7 +92,7 @@ export default function Home() {
           />
         </Section>
 
-        <Section
+        {/* <Section
           bgColor="white"
           bgImage={`${ICON_PATH}grafismo.svg`}
           bgPosition={"-30vw -30vw"}
@@ -103,7 +103,7 @@ export default function Home() {
           >
             Com quem já colaboramos
           </h3>
-        </Section>
+        </Section> */}
         <Footer>
           <iframe
             width="100%"
