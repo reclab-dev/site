@@ -1,8 +1,11 @@
-const Section = (props) => {
-  const { bgImage, bgColor, bgPosition, children, id, topBgImage } = props;
+const VideoSection = (props) => {
+  const { bgImage, bgColor, children, id } = props;
 
   return (
     <section id={id}>
+      <video autoPlay muted loop>
+        <source src="assets/dots.mp4" type="video/mp4" />
+      </video>
       <div>{children}</div>
 
       <style jsx>{`
@@ -12,18 +15,20 @@ const Section = (props) => {
           width: 100%;
           overflow: hidden;
         }
+
+        video {
+          position: absolute;
+          height: 100vh;
+          width: 100%;
+          object-fit: cover;
+          z-index: -1;
+        }
+
         div {
           min-height: 100vh;
           max-height: fit-content;
           width: 100%;
           padding: 7vh 7vw;
-          background-image: url(${topBgImage}),
-            ${"bgImage" in props ? `url(${bgImage})` : "none"};
-          background-color: ${"bgColor" in props
-            ? `var(--color-${bgColor})`
-            : "#fff"};
-          background-position: ${"bgPosition" in props ? bgPosition : "center"};
-          background-repeat: no-repeat;
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
           grid-auto-flow: row;
@@ -37,4 +42,4 @@ const Section = (props) => {
   );
 };
 
-export default Section;
+export default VideoSection;

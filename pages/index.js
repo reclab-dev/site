@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Section from "../components/Section";
-import MutableSection from "../components/MutableSection";
+import VideoSection from "../components/VideoSection";
 import Bullets from "../components/Bullets";
 import Footer from "../components/Footer";
 
@@ -40,14 +40,14 @@ export default function Home() {
 
       <Header links={links}></Header>
       <main>
-        <MutableSection
+        <VideoSection
           bgImage={`${IMG_PATH}img-header.png`}
           dotsPath="headerDots"
         >
           <h1 className="" style={{ maxWidth: "330px" }}>
             Pesquisa, cultura <span className="font-red">&amp;</span> estratégia
           </h1>
-        </MutableSection>
+        </VideoSection>
 
         <Section bgColor="sand" id="o-que-nos-move">
           <h2 style={{ maxWidth: "90vw" }}>
@@ -95,8 +95,7 @@ export default function Home() {
         <Section
           bgColor="white"
           bgImage={`${ICON_PATH}grafismo.svg`}
-          bgPosition="-400px -400px"
-          style={{ backgroundPosition: "center" }}
+          bgPosition={"-30vw -30vw"}
         >
           <h3
             className=""
