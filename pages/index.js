@@ -104,7 +104,7 @@ export default function Home() {
             Com quem já colaboramos
           </h3>
         </Section> */}
-        <Footer>
+        <Footer id="contato">
           <iframe
             width="100%"
             height="450"
