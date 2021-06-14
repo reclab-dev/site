@@ -1,5 +1,13 @@
 const Section = (props) => {
-  const { bgImage, bgColor, bgPosition, children, id, topBgImage } = props;
+  const {
+    bgImage,
+    bgColor,
+    bgPosition,
+    children,
+    id,
+    topBgImage,
+    withoutGrid,
+  } = props;
 
   return (
     <section id={id}>
@@ -24,7 +32,7 @@ const Section = (props) => {
             : "#fff"};
           background-position: ${"bgPosition" in props ? bgPosition : "center"};
           background-repeat: no-repeat;
-          display: grid;
+          display: ${withoutGrid ? "block" : "grid"};
           grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
           grid-auto-flow: row;
           gap: 10px;

@@ -4,6 +4,7 @@ import Section from "../components/Section";
 import VideoSection from "../components/VideoSection";
 import Bullets from "../components/Bullets";
 import Footer from "../components/Footer";
+import Collab from "../components/Collab";
 
 import { IMG_PATH, ICON_PATH } from "../constants/paths";
 
@@ -13,11 +14,12 @@ export default function Home() {
     { text: "Quem somos", anchor: "#quem-somos" },
     { text: "O que fazemos", anchor: "#o-que-fazemos" },
     { text: "Contato", anchor: "#contato" },
+    { text: "Com quem colaboramos", anchor: "#com-quem-colaboramos" },
   ];
 
   const listDiag = [
     "Imagem e posicionamento de marca",
-    "Pontos de contato e jornadas de experiência",
+    "Pontos de contato, jornadas de experiência e UX",
     "Contextos e tendências comportamentais",
     "Comunicação interna e cultura organizacional",
     "Análises e estudos quantitativas e qualitativas",
@@ -92,10 +94,12 @@ export default function Home() {
           />
         </Section>
 
-        {/* <Section
+        <Section
           bgColor="white"
           bgImage={`${ICON_PATH}grafismo.svg`}
           bgPosition={"-30vw -30vw"}
+          id="com-quem-colaboramos"
+          withoutGrid
         >
           <h3
             className=""
@@ -103,7 +107,8 @@ export default function Home() {
           >
             Com quem já colaboramos
           </h3>
-        </Section> */}
+          <Collab />
+        </Section>
         <Footer id="contato">
           <iframe
             width="100%"
