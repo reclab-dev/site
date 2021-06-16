@@ -22,9 +22,9 @@ const Collab = (props) => {
     <div id={id}>
       <div className="collab">
         {new Array(16).fill(0).map((_, index) => {
-          console.log("image", index);
           return (
             <img
+              key={index}
               alt="Logo de colaborador"
               src={`assets/logos/logo-${index + 1}.png`}
               width={200}

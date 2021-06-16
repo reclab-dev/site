@@ -67,9 +67,9 @@ export default function Home() {
             style={{ display: "flex", flexDirection: "column" }}
           >
             <p className="highlight">
-              Somos um laboratório de comportamento que entende contextos e cria
-              condições para que organizações sejam mais relevantes e
-              inovadoras.
+              Somos um laboratório de pesquisa e comportamento que entende
+              contextos e cria condições para que organizações sejam mais
+              relevantes e inovadoras.
             </p>
             <p>
               Desde 1993 colaboramos com marcas e empreendedores na construção
@@ -105,7 +105,7 @@ export default function Home() {
             className=""
             style={{ alignSelf: "start", margin: "8vmin 0 4vmin 0" }}
           >
-            Com quem já colaboramos
+            Algumas marcas com que já colaboramos
           </h3>
           <Collab />
         </Section>
