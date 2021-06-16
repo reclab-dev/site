@@ -55,14 +55,14 @@ const Header = ({ links }) => {
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
         </Link>
-        <Link
+        {/* <Link
           href="https://www.facebook.com/reclabconectantoinformacoes"
           passHref
         >
           <a target="_blank">
             <FontAwesomeIcon icon={faFacebookF} size="2x" />
           </a>
-        </Link>
+        </Link> */}
       </div>
     );
   };
